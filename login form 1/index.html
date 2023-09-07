@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Registration form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h2 class="logo">WebTech</h2>
+        <nav class="navigation">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+            <button class="btnlogin-popup">Login</button>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="form-box">
+            <h1 id="title">Login</h1>
+            <form>
+                <div class="input-group">
+                    <div class="input-field" id="nameField">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" placeholder="Name">
+                    </div>
+
+                    <div class="input-field">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="email" placeholder="Email">
+                    </div>
+
+                    <div class="input-field">
+                        <i class="fa-solid fa-unlock"></i>
+                        <input type="text" placeholder="Password" id="pass">
+                        <input type="checkbox" onclick="myfunction()">
+                    </div>
+                    <p>Forget password <a href="#">Click Here!</a></p>
+                    <input type="submit" name="" value="Login" onclick="validate()" class="btnlogin">
+                </div>
+
+                <div>
+                    <div>
+                        <p id="length"></p>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/99de8287e7.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
